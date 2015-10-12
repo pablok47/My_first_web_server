@@ -1,13 +1,6 @@
 require 'sinatra'
 
 get '/' do
-
- "Hello world"
-
+	File.open("./public/hello.txt").read
 end
 
-get "/sinatra" do
-
-"Hello Sinatra"
-
-end
